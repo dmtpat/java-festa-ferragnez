@@ -29,8 +29,11 @@ public class CheckGuest {
         // }else{
         //     System.out.println("L'ospite "+ guestName +" è nella lista. Può entrare!");
         // }
-
-        // ; Checkguest for version
+        //! Questa è una prova di commento colorato
+        ////Anche questa è una prova
+        //todo : esempio di commento colorato
+        //? eccone un altro ancora
+        //* Checkguest for version
         int i;
         for (i = 0; i < guests.length; i++) {
             if (guestName.toLowerCase().equals(guests[i].toLowerCase())) {
