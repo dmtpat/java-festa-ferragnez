@@ -1,7 +1,32 @@
 package com.ferragnez.party;
 
+import java.util.Scanner;
+
 public class CheckGuest {
     public static void main(String[] args) {
+        String[] guests = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic" };
+        String guestName;
         
+        Scanner input = new Scanner(System.in);
+        System.out.print("Inserisci il tuo nome: ");
+        guestName = input.nextLine();
+        input.close();
+        // System.out.println("Il nome dell'ospite è: "+ guestName );
+
+        int i = 0;
+        boolean isPresent = false;
+        while (!isPresent && i < guests.length ) {
+            if (guests[i].equals(guestName)) {
+                isPresent = true;
+            } else {
+                i++;
+            }
+        }
+        if (!isPresent){
+            System.out.println("L'ospite " + guestName +" non è sulla lista!");
+        }else{
+            System.out.println("L'ospite "+ guestName +" è nella lista all'indice. Può entrare!");
+        }
+
     }
 }
