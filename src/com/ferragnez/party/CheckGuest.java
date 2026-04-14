@@ -33,8 +33,8 @@ public class CheckGuest {
         // ; Checkguest for version
         int i;
         for (i = 0; i < guests.length; i++) {
-            if (guestName.equals(guests[i])) {
-                System.out.println("L'ospite " + guestName + " è nella lista. Può entrare!");
+            if (guestName.toLowerCase().equals(guests[i].toLowerCase())) {
+                System.out.println("L'ospite " + guests[i] + " è nella lista. Può entrare!");
                 break;
             }
         }
